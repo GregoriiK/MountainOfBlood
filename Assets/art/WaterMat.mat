@@ -53,9 +53,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 0.7
+    - _NormalStrength: 1.09
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Smoothness: 1
+    - _Speed: 0.67
+    - _scale: 23.95
     m_Colors:
-    - _Color: {r: 0.26563418, g: 0.4292755, b: 0.6981132, a: 1}
+    - _Color: {r: 0.34591183, g: 0.46546584, b: 0.66666657, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
