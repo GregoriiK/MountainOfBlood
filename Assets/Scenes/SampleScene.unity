@@ -95,7 +95,8 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: bcf82ae881f50644c84884519c70de8b,
     type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 74f62a27deddcff4c9beeac376d1a7c3,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2

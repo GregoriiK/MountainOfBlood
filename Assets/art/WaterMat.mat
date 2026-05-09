@@ -52,14 +52,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.7
-    - _NormalStrength: 1.09
+    - _Alpha: 0.03
+    - _Depth: 13.46
+    - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 1
-    - _Speed: 0.67
-    - _scale: 23.95
+    - _Speed: 0.31
+    - _WaveHeigth: 0.26
+    - _WaveNoiseSpeed: 0.79
+    - _scale: 51.83
     m_Colors:
-    - _Color: {r: 0.34591183, g: 0.46546584, b: 0.66666657, a: 1}
+    - _Color: {r: 0.34509805, g: 0.4936414, b: 0.6666667, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
