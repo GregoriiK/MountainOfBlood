@@ -6,8 +6,6 @@ public class MainMenuManager : MonoBehaviour
 {
     Scene scene;
     [SerializeField] GameObject optionsPanel;
-    [SerializeField] Slider mainVolumeSlider;
-    [SerializeField] TextMeshProUGUI mainVolumeText;
     private void Start()
     {
         scene = SceneManager.GetActiveScene();
@@ -30,4 +28,5 @@ public class MainMenuManager : MonoBehaviour
             optionsPanel.SetActive(true);
         }
     }
+
 }
