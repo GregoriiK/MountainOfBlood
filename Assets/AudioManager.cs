@@ -5,9 +5,9 @@ using TMPro;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] Slider mainVolumeSlider;
+    [SerializeField] public Slider mainVolumeSlider;
     [SerializeField] TextMeshProUGUI mainVolumeText;
-    AudioSource mainAudioSource;
+    public AudioSource mainAudioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     public void ChangeVolume()
     {
         mainAudioSource.volume = mainVolumeSlider.value;
-        mainVolumeText.text = $"{mainVolumeSlider.value*100}%";
+        mainVolumeText.text = $"{Mathf.Floor(mainVolumeSlider.value*100)}%";
     }
 
 }

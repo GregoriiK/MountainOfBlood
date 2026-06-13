@@ -5,10 +5,14 @@ using TMPro;
 public class MainMenuManager : MonoBehaviour
 {
     Scene scene;
+    AudioManager audioManager;
     [SerializeField] GameObject optionsPanel;
+    public float mainVolumeBackup;
     private void Start()
     {
         scene = SceneManager.GetActiveScene();
+        audioManager = FindAnyObjectByType<AudioManager>();
+        mainVolumeBackup = audioManager.mainAudioSource.volume;
         ToggleOptionsPanel();
     }
 
@@ -22,6 +26,7 @@ public class MainMenuManager : MonoBehaviour
         if (optionsPanel.activeInHierarchy == true)
         {
             optionsPanel.SetActive(false);
+            mainVolumeBackup = audioManager.mainAudioSource.volume;
         }
         else
         {
@@ -29,4 +34,10 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    public void CancelChanges()
+    {
+        audioManager.mainVolumeSlider.value = mainVolumeBackup;
+        audioManager.ChangeVolume();
+        ToggleOptionsPanel() ;
+    }
 }
